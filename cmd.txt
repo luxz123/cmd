@@ -1,1 +1,0 @@
-Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -like "*VMware*"} | ForEach-Object {$_.Uninstall()}
